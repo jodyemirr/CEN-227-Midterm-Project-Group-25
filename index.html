@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitap Kataloğu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="active">Ana Sayfa (Katalog)</a>
+      <a href="form.html">Yeni Kitap Ekle</a>
+      <a href="table.html">Kitap Tablosu</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Kitap Kataloğu</h1>
+
+   
+    <section class="controls">
+      
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Kitap adı veya yazar ara..."
+      >
+
+      
+      <select id="genreSelect">
+        <option value="all">Tüm Kategoriler</option>
+        <option value="Dystopian">Dystopian</option>
+        <option value="Felsefe">Felsefe</option>
+        <option value="Roman">Roman</option>
+        <option value="Bilim Kurgu">Bilim Kurgu</option>
+      </select>
+    </section>
+
+    
+    <section id="bookContainer" class="book-grid">
+      
+    </section>
+  </main>
+
+  
+  <script src="js/data.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

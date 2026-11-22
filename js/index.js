@@ -24,3 +24,6 @@ function renderBooks(booksArray) {
 
     bookContainer.innerHTML = html;
 }
+
+const bookContainer = document.getElementById("bookContainer"); // ana sayfada gorunsun diye ekledim - ahmet
+renderBooks(getBooks());
